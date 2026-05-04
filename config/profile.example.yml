@@ -1,74 +1,94 @@
 # Career-Ops Profile Configuration
-# Copy this file to config/profile.yml and fill in your details.
-# This is the single source of truth for your personal data across all modes.
+# Single source of truth for personal data across all modes.
 
 candidate:
-  full_name: "Jane Smith"
-  email: "jane@example.com"
-  phone: "+1-555-0123"
-  location: "San Francisco, CA"
-  linkedin: "linkedin.com/in/janesmith"
-  portfolio_url: "https://janesmith.dev"
-  github: "github.com/janesmith"
-  twitter: "https://x.com/janesmith"
+  full_name: "Nithin Moorthy"
+  email: "nithinmoorthy11@gmail.com"
+  phone: "+14254355486"
+  location: "Bellevue, WA"
+  linkedin: "https://www.linkedin.com/in/nithin-moorthy/"
+  github: "https://github.com/nighthawkEnterprise"
 
 target_roles:
-  # Your North Star roles — what you're optimizing for
+  # North Star roles — optimizing for senior PM roles in identity, developer platforms,
+  # and AI tooling, with optional stretch into founding/early-stage.
   primary:
-    - "Senior AI Engineer"
-    - "Staff ML Engineer"
-  # Archetypes help the evaluation system score fit
+    - "Senior Technical Product Manager"
+    - "Staff Product Manager"
+    - "Principal Product Manager (Platform / Developer Tools)"
+
   archetypes:
-    - name: "AI/ML Engineer"
+    - name: "Technical PM — Identity & Auth Infrastructure"
       level: "Senior/Staff"
-      fit: "primary"        # primary = dream role, secondary = good fit, adjacent = stretch
-    - name: "AI Product Manager"
+      fit: "primary"
+    - name: "Platform / Developer Tools PM"
+      level: "Senior/Staff"
+      fit: "primary"
+    - name: "AI Tooling / Applied AI PM"
       level: "Senior"
       fit: "secondary"
-    - name: "Solutions Architect"
-      level: "Mid-Senior"
+    - name: "Founding PM / PM #1 at early-stage startup"
+      level: "Senior"
+      fit: "secondary"
+    - name: "Consumer / Growth PM"
+      level: "Senior"
       fit: "adjacent"
 
 narrative:
-  # Your professional headline (1 line)
-  headline: "ML Engineer turned AI product builder"
-  # Your exit story — what makes you unique
-  exit_story: "Built and sold my SaaS after 5 years. Now focused on applied AI at scale."
-  # Your top 3-5 superpowers
+  # 1-line professional headline
+  headline: "Senior Technical PM specializing in authentication infrastructure, developer platforms, and AI-powered internal tooling"
+
+  # What makes you distinct — adjust the framing depending on whether you're talking
+  # to platform/infra teams (lead with auth depth) or AI/builder roles (lead with
+  # AuthQL + Sasha + solo execution).
+  exit_story: "Five years building authentication infrastructure at Auth0/Okta — embedded login, passkeys/WebAuthn, MFA, recovery flows — for products serving identity at significant scale. Equally comfortable shaping multi-quarter platform strategy (Policy Framework, WebAuthN/Passkeys consolidation) and shipping zero-to-one AI tooling (AuthQL, NL-to-SQL analytics on Snowflake Cortex). Currently completing Georgia Tech's OMSCS with an AI specialization."
+
+  # Top superpowers — pulled from the patterns visible across your Confluence work
   superpowers:
-    - "End-to-end ML pipelines"
-    - "Fast prototyping (idea to prod in 2 weeks)"
-    - "Cross-functional communication"
-  # Proof points — projects, articles, case studies with measurable impact
+    - "Architectural judgment on auth/identity systems (passkeys, WebAuthn, MFA, embedded flows)"
+    - "Driving validation strategy under ambiguity (4-workstream Policy Framework validation; Embedded baseline metrics framework)"
+    - "Building AI-powered internal tooling for non-technical teammates (AuthQL, NL-to-SQL with Snowflake Cortex)"
+    - "Prioritization under hard constraints (Q4 RAPID: 248 engineer-weeks of demand vs 200 of capacity)"
+    - "Long-term technical strategy over short-term point fixes (SEC-932 standardize-email RAPID; WebAuthN/Passkeys consolidation)"
+
   proof_points:
-    - name: "Project Alpha"
-      url: "https://janesmith.dev/project-alpha"
-      hero_metric: "Reduced inference latency 40%"
-    - name: "Open Source Tool"
-      url: "https://github.com/janesmith/tool"
-      hero_metric: "2K+ GitHub stars"
-  # Optional: dashboard/demo URL with credentials
+    # Pick the ones with public URLs or measurable hero metrics. I've sketched these
+    # from your Confluence summaries — fill in URLs where applicable.
+    - name: "Auth0 Policy Framework"
+      hero_metric: "Defined 15-principle architectural charter; analysis of 40K production Actions identified ~25% as policy-replaceable"
+    - name: "Auth0 Authentication Policy Framework"
+      hero_metric: "Proposed shared policy control plane with DSL, GUI, hierarchy, simulation, and governance model across authentication, enrollment, authorization, verification, and session use cases"
+    - name: "Account API Authentication Methods"
+      hero_metric: "Consolidated end-user authenticator management into scoped Account APIs, reducing need for Management API, MFA APIs, client-credentials flows, and custom middleware"
+    - name: "ACR Support for Account API"
+      hero_metric: "Expanded assurance model across Universal Login and Embedded flows, supporting step-up authentication for sensitive Account API token issuance"
+    - name: "Custom RPID for Passkeys"
+      hero_metric: "Enabled cross-domain passkey enrollment and authentication across shared root domains, reducing duplicate credential enrollment"
+    - name: "MFA Roadmap Prioritization / RAPID Decisions"
+      hero_metric: "Drove roadmap tradeoff decisions across customer escalations, security work, enterprise feature requests, and platform modernization"
+
+
+  # Optional dashboard/demo
   # dashboard:
-  #   url: "https://janesmith.dev/demo"
-  #   password: "demo-2026"
+  #   url: ""
+  #   password: ""
 
 compensation:
-  target_range: "$150K-200K"     # Your target total comp
+  # Your Okta TC (~$248K) is your floor. The Workato offer at $290K cash and the
+  # Meta E5 bar both suggest a target band in the high $200K to mid $300K range
+  # depending on role/location/equity mix.
+  target_range: "$280K-$360K"
   currency: "USD"
-  minimum: "$120K"               # Walk-away number
-  location_flexibility: "Remote preferred, 1 week/month on-site possible"
+  minimum: "$248K"
+  location_flexibility: "Seattle preferred; remote or hybrid preferred; open to Bay Area travel or selective relocation only for exceptional opportunities"
 
 location:
   country: "United States"
-  city: "San Francisco"
-  timezone: "PST"
-  visa_status: "No sponsorship needed"
-  # For remote roles outside your country:
-  # onsite_availability: "1 week/month in any city"
+  city: "Bellevue, WA (Seattle metro)"
+  timezone: "PT"
+  visa_status: "No Sponsorship Required"
+  onsite_availability: "Open to occasional travel for non-local roles"
 
 cv:
-  output_format: "html" # "html" (default) or "latex"
-  # (Optional) Canva resume design ID for visual CV generation via /career-ops pdf.
-  # Find it in your Canva design URL: https://www.canva.com/design/DAxxxxxxx/...
-  # The ID starts with "D" and is 11 characters long.
-  # canva_resume_design_id: "DAxxxxxxxxx"
+  output_format: "html"
+  # canva_resume_design_id: "[fill in if you use Canva]"
